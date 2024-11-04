@@ -1,0 +1,9 @@
+services:
+  syslog-server:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: SyslogServer/Dockerfile
+    ports:
+      - "10514:10514/udp"
+    network_mode: host
