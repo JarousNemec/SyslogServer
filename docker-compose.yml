@@ -3,7 +3,7 @@ services:
     restart: unless-stopped
     build:
       context: .
-      dockerfile: SyslogServer/Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "10514:10514/udp"
     network_mode: host
