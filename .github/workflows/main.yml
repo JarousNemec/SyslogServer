@@ -5,7 +5,7 @@ on:
       - master
 
 env:
-  REGISTRY: hub.docker.com
+  REGISTRY: registry.hub.docker.com
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
