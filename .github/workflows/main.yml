@@ -15,7 +15,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - dockerfile: ./../../SyslogServer/Dockerfile
+          - dockerfile: ./SyslogServer/Dockerfile
             image: jardathedev/syslog-server
     permissions:
       contents: read
